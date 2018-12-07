@@ -81,7 +81,6 @@ class Network(object):
         isInitialized = True
 
         while True:
-            print("f")
             if self.sendDistance != None and self.sendAltitude != None and self.sendAzimuth != None:
                 self.sendMessage(self.sendDistance.encode('utf-8') + b";" + self.sendAzimuth.encode('utf-8') + b";" + self.sendAltitude.encode('utf-8'))
                 self.sendDistance = None
