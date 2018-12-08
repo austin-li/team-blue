@@ -17,7 +17,7 @@ public class client {
             while ( true ) {
                 System.out.println("waiting");
                 fromServer = inFromServer.readLine();
-                if (fromServer == null){ 
+                if (fromServer == null) { 
                     continue;
                 }
                 double distance = 0, azimuth = 0, altitude = 0;
@@ -34,7 +34,7 @@ public class client {
                 table.putNumber("altitude", altitude);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         } finally {
             inFromServer.close();
             soc.close();
