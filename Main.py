@@ -7,10 +7,6 @@ import network
 
 cam = cv2.VideoCapture(1)
 
-cv2.namedWindow('Output',cv2.WND_PROP_FULLSCREEN)
-cv2.setWindowProperty('Output', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-
-
 global network1
 network1 = network.Network()
 network1.userServer()
